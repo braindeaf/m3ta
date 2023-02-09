@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency 'hashie', '5.0.0'
-  spec.add_dependency 'rails', '>= 7.0.4.1'
+  spec.add_dependency 'rails', '~> 7.0', '>= 7.0.4.1'
 
   spec.add_development_dependency 'factory_bot', '~> 6.2.1'
   spec.add_development_dependency 'faker', '~> 3.1.1'

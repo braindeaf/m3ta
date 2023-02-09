@@ -3,7 +3,7 @@ PATH
   specs:
     m3ta (0.1.0)
       hashie (= 5.0.0)
-      rails (>= 7.0.4.1)
+      rails (~> 7.0, >= 7.0.4.1)
 
 GEM
   remote: https://rubygems.org/
