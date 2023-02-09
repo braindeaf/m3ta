@@ -5,4 +5,4 @@
 /tmp/
 /spec/dummy/log/*.log
 /test/dummy/tmp/
-/coverage/
+/coverage/*

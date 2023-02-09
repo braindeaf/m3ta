@@ -11,7 +11,13 @@ RSpec.describe M3ta::Helpers, type: :helper do
 
   describe '.meta_tag' do
     it 'returns a <meta /> tag' do
-      expect(helper.meta_tag).to eq('<meta />')
+      expect(helper.m3ta_tag).to eq('<meta />')
+    end
+  end
+
+  describe '.m3ta_tags' do
+    it 'returns a string of all tags' do
+      expect(helper.m3ta_tag).to include('meta')
     end
   end
 end
