@@ -4,7 +4,7 @@ require 'hashie'
 
 module M3ta
   class Builder < Hashie::Dash
-    # Core 
+    # Core
     property :site_name
     property :type
     property :title
@@ -14,7 +14,7 @@ module M3ta
     property :keywords
     property :player
     property :video
-    
+
     # Social
     property :facebook_app_id
     property :twitter_handle

@@ -20,13 +20,12 @@ Gem::Specification.new do |spec|
     Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
 
-  spec.add_dependency 'hashie'
+  spec.add_dependency 'hashie', '5.0.0'
   spec.add_dependency 'rails', '>= 7.0.4.1'
 
-  spec.add_development_dependency 'faker'
-  spec.add_development_dependency 'rails-controller-testing'
-  spec.add_development_dependency 'rspec-rails'
-  spec.add_development_dependency 'factory_bot'
-  spec.add_development_dependency 'rubocop-rails'
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'factory_bot', '~> 6.2.1'
+  spec.add_development_dependency 'faker', '~> 3.1.1'
+  spec.add_development_dependency 'rspec-rails', '~> 6.0.1'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.17.4'
+  spec.add_development_dependency 'simplecov', '~> 0.22.0'
 end

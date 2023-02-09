@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :builder, class: 'M3ta::Builder' do
     site_name { Faker::Lorem.sentence }
@@ -9,7 +11,7 @@ FactoryBot.define do
     keywords { Faker::Lorem.words(number: 2).join(', ') }
     player { Faker::Internet.url }
     video { Faker::Internet.url }
-    
+
     facebook_app_id { Faker::Number.number(digits: 10) }
     twitter_handle { "@#{Faker::Lorem.word}" }
   end
