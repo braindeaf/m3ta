@@ -8,8 +8,8 @@ module M3ta
         twitter_tags,
         m3ta_tag(property: 'og:type', content: m3ta.type || 'website'),
         m3ta_tag(property: 'og:site_name', content: site_name),
-        m3ta_tag(property: 'og:url', content: url),
-        tag(:link, rel: 'canonical', href: url),
+        m3ta_tag(property: 'og:url', content: canonical_url),
+        tag(:link, rel: 'canonical', href: canonical_url),
         title_tags,
         description_tags,
         player_tags,
@@ -100,7 +100,7 @@ module M3ta
       m3ta.site_name
     end
 
-    def url
+    def canonical_url
       (m3ta.url || request.url).split('?')[0]
     end
 
