@@ -6,3 +6,4 @@
 /spec/dummy/log/*.log
 /test/dummy/tmp/
 /coverage/*
+Gemfile.lock
